@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    max-width: 800px;
+    width: 90%;
+}
+
+.image-section {
+    background: linear-gradient(135deg, #e4ecf1, #66ccff);
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.login-section {
+    padding: 40px;
+    width: 50%;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+p {
+    color: gray;
+    font-size: 14px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.input-group {
+    position: relative;
+    margin: 10px 0;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 40px 10px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input-group .icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: gray;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.social-login {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icons button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.google { background: #db4437; }
+.facebook { background: #3b5998; }
+.twitter { background: #1da1f2; }
+.linkedin { background: #0077b5; }
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .image-section {
+        width: 100%;
+        height: 100%;
+    }
+
+    .login-section {
+    width: 100%;
+}
+}
