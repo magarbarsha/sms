@@ -1,6 +1,6 @@
 <?php
 session_start();
-require '../includes/config.php';
+require './includes/config.php';
 
 if (isset($_POST['login'])) {
     $email = $_POST['email'];
@@ -18,7 +18,7 @@ if (isset($_POST['login'])) {
                 header('location: ./admin/studentDisplay.php');
             }
             if ($role == 'student') {
-                header('location: ../user/studentdashboard.php');
+                header('location: ./user/studentdashboard.php');
             }
         } else {
             echo "Password donot match";
@@ -35,13 +35,13 @@ if (isset($_POST['login'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="../assets/css/login.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
     <!-- <script defer src="../assets/js/login.js"></script> -->
 </head>
 <body>
     <div class="container">
         <div class="image-section">
-            <img src="../assets/image/student.jpg" alt="Student holding books">
+            <img src="./assets/image/student.jpg" alt="Student holding books">
         </div>
         <div class="login-section">
             <h2>Welcome to Dashboard</h2>

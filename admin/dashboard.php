@@ -1,3 +1,8 @@
+<?php
+include '../includes/config.php';
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +18,7 @@
         <div class="logo" style="text-align:center;">SMS</div>
         <ul class="menu">
             <li class="active"><a href="dashboard.php">Dashboard</a></li>
-            <li><a href="studentdisplay.php">Students</a></li>
+            <li><a href="./studentdisplay.php">Students</a></li>
             <li><a href="#">Teachers</a></li>
             <li><a href="#">Departments</a></li>
             <li><a href="#">Subjects</a></li>
@@ -43,8 +48,7 @@
             <a href="#" class="dropdown-item">Logout</a>
         </div>
     </div>
-</nav>
-            
+</nav>  
         </header>
 
         <section class="cards">

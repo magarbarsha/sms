@@ -2,6 +2,9 @@
 include('../includes/config.php');
 $sql="SELECT *FROM faculties";
 $res=mysqli_query($conn,$sql);
+if($res){
+    header('location: ../studentdisplay.php');
+}
 $num=mysqli_num_rows($res);
 if(isset($_POST['submit'])){
 
